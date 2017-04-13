@@ -16,9 +16,9 @@ if($type == 'json' && !empty($type)){
 } elseif($type == 'xml'){
 	header("Content-type: text/xml");
 	$test_array = array (
-		strrev($ime) => 'brojA',
-		strrev($prezime) => 'brojB',
-		strrev($indeks) => 'rezultat',
+		strrev($ime) => 'ime',
+		strrev($prezime) => 'prezime',
+		strrev($indeks) => 'indeks',
 	);
 	$xml = new SimpleXMLElement('<root/>');
 	array_walk_recursive($test_array, array ($xml, 'addChild'));
