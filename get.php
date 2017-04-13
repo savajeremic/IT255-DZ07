@@ -27,8 +27,8 @@ if($type == 'json' && !empty($type)){
 	header("Content-type: application/json");
 	$test_array = array (
 		'ime' => strrev('Sava'),
-		'prezime' => strrev'Jeremic'),
-		'brojIndexa' => strrev'2733'),
+		'prezime' => strrev('Jeremic'),
+		'brojIndexa' => strrev('2733'),
 	);
 }
 echo json_encode($test_array);
